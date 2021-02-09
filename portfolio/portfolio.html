@@ -24,20 +24,37 @@
 			</b>
 		<div class="portfolio">
 			<div class="money">
-				<h2>$336.22</h2>
+				<h2></h2>
 			</div>
 			<div class="coins">
 				<div id="BTC">
-					<p>0.00497131 BTC: $213.98</p>
+					<p></p>
 				</div>
 				<div id="ETH">
-					<p>0.04 ETH: $68.23</p>
+					<p></p>
 				</div>
 				<div id="LINK">
-					<p>2.1693 LINK: $54.61</p>
+					<p></p>
 				</div>
 			</div>
 		</div>
+		<script>
+"use strict";
+let url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest",
+	qString = "?symbol=BTC,ETH,LINK"; 
+
+fetch(url + qString, {
+	headers: {
+	'Access-Control-Allow-Origin': '*',
+	'X-CMC_PRO_API_KEY': 'd3e1e7bc-0c03-4cf0-abf8-70e71a1b2ffe'
+	}})
+	.then(function(resp) {
+		return resp.json();
+	})
+	.then(function(data) {
+		console.log(data.data);
+	})
+		</script>
     </body>
 </html>
 
