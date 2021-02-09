@@ -1,12 +1,33 @@
-.title {
-    text-align: center;
+body {
+	font-family: 'Oxygen';
 }
 
 .nav-bar {
-    font-size: 20pt;
-    padding-left: 50px;
+	background-color: #000060;
 }
 
-h1 {
-    font-size: 32pt;
+.nav-links {
+	font-size: 20pt;
+	margin-left: 10%;
 }
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.entry-title {
+	margin-left: 10%;
+	font-size: 14pt;
+}
+

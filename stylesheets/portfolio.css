@@ -1,4 +1,4 @@
-body { 
+body {
 	font-family: 'Oxygen';
 }
 
@@ -7,7 +7,7 @@ body {
 }
 
 .nav-links {
-    font-size: 20pt;
+	font-size: 20pt;
 	margin-left: 10%;
 }
 
@@ -26,23 +26,32 @@ a:hover {
 	color: gray;
 }
 
-h1 {
-    font-size: 20pt;
-}
-
-h2 {
-	font-size: 28pt;
-}
-
-.refs {
-    text-align: center;
-	background-color: #000060;
-	color: white;
-}
-
-.info {
+.title {
+	font-size: 24pt;
 	text-align: center;
+}
+
+.portfolio {
+	text-align: center;
+}
+
+.money {
+	color: green;
+	font-size: 24pt;
+}
+
+#BTC {
+	font-size: 22pt;
+	color: gold;
+}
+
+#ETH {
 	font-size: 20pt;
-	color: black; 
+	color: #00008b;
+}
+
+#LINK {
+	font-size: 18pt;
+	color: blue;
 }
 
