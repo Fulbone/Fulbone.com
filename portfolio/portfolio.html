@@ -22,8 +22,9 @@
 			<b>
 			<h2>Current Portfolio</h2>
 			</b>
+		</div>
 		<div class="portfolio">
-			<div class="money">
+			<div id="money">
 				<h2></h2>
 			</div>
 			<div class="coins">
@@ -39,21 +40,15 @@
 			</div>
 		</div>
 		<script>
-"use strict";
-let url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest",
-	qString = "?symbol=BTC,ETH,LINK"; 
-
-fetch(url + qString, {
-	headers: {
-	'Access-Control-Allow-Origin': '*',
-	'X-CMC_PRO_API_KEY': 'd3e1e7bc-0c03-4cf0-abf8-70e71a1b2ffe'
-	}})
-	.then(function(resp) {
-		return resp.json();
-	})
-	.then(function(data) {
-		console.log(data.data);
-	})
+// JAVASCRIPT IS THE WORST LANGUAGE
+fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cchainlink&vs_currencies=usd')
+	.then(response => response.json())
+	.then(function(data) {;
+		document.getElementById("money").innerHTML = "<h2>$" + Math.round((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)) + "</h2>";
+		document.getElementById("BTC").innerHTML = "<p>0.00497131 BTC: $" + Math.round(data.bitcoin.usd * 0.00497131) + "</p>";
+		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + Math.round(data.ethereum.usd * .04) + "</p>";
+		document.getElementById("LINK").innerHTML = "<p>2.1693: $" + Math.round(data.chainlink.usd * 2.1693) + "</p>";
+	});
 		</script>
     </body>
 </html>
