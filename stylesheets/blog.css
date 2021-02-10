@@ -26,8 +26,21 @@ a:hover {
 	color: gray;
 }
 
-.entry-title {
+.title {
+	font-size: 20pt;
+	color: black;
+	text-align: center;
+}
+
+.new-entry {
 	margin-left: 10%;
+	font-size: 18pt;
+}
+
+.entry-title {
 	font-size: 14pt;
 }
 
+.entry {
+	font-size: 14pt;
+}

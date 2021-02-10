@@ -26,15 +26,9 @@ a:hover {
 	color: gray;
 }
 
-.fulbone-ascii {
-	font-family: monospace;
-	font-size: 14pt;
+.title {
+	font-size: 20pt;
 	text-align: center;
-}
-
-.fulbone-ascii pre {
-	display: inline-block;
-	text-align: left;
 }
 
 .info {
