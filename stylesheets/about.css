@@ -46,7 +46,7 @@ body {
 }
 
 .refs a:hover {
-	color: black;
+	color: gray;
 	text-decoration: none;
 }
 
