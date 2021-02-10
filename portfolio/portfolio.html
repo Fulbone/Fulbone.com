@@ -43,11 +43,11 @@
 // JAVASCRIPT IS THE WORST LANGUAGE
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cchainlink&vs_currencies=usd')
 	.then(response => response.json())
-	.then(function(data) {;
-		document.getElementById("money").innerHTML = "<h2>$" + Math.round((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)) + "</h2>";
-		document.getElementById("BTC").innerHTML = "<p>0.00497131 BTC: $" + Math.round(data.bitcoin.usd * 0.00497131) + "</p>";
-		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + Math.round(data.ethereum.usd * .04) + "</p>";
-		document.getElementById("LINK").innerHTML = "<p>2.1693: $" + Math.round(data.chainlink.usd * 2.1693) + "</p>";
+	.then(function(data) {
+		document.getElementById("money").innerHTML = "<h2>$" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
+		document.getElementById("BTC").innerHTML = "<p>0.00497131 BTC: $" + (data.bitcoin.usd * 0.00497131).toFixed(2) + "</p>";
+		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + (data.ethereum.usd * .04).toFixed(2) + "</p>";
+		document.getElementById("LINK").innerHTML = "<p>2.1693 LINK: $" + (data.chainlink.usd * 2.1693).toFixed(2) + "</p>";
 	});
 		</script>
     </body>
