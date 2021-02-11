@@ -35,6 +35,10 @@ a:hover {
 	text-align: center;
 }
 
+.info {
+	font-size: 16pt;
+}
+
 #money {
 	color: green;
 	font-size: 24pt;

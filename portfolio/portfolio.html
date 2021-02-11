@@ -23,19 +23,24 @@
 		</div>
 		<hr>
 		<div class="portfolio">
+			<div class="info">
+				<p>This page keeps track of how much my cryptocurrency portfolio is worth.<br>If it does not seem to update, clear your browser cache.</p>
 			<div id="money">
-				<h2></h2>
+				<h2>Loading...</h2>
 			</div>
 			<div class="coins">
 				<div id="BTC">
-					<p></p>
+					<p>Loading...</p>
 				</div>
 				<div id="ETH">
-					<p></p>
+					<p>Loading...</p>
 				</div>
 				<div id="LINK">
-					<p></p>
+					<p>Loading...</p>
 				</div>
+			</div>
+			<div class="request">	
+				<p>Please don't spam refresh, I don't want to spam CoinGecko's API.</p>
 			</div>
 		</div>
 		<script>
@@ -43,7 +48,7 @@
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cchainlink&vs_currencies=usd')
 	.then(response => response.json())
 	.then(function(data) {
-		document.getElementById("money").innerHTML = "<h2>$" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
+		document.getElementById("money").innerHTML = "<h2>Total: $" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
 		document.getElementById("BTC").innerHTML = "<p>0.00497131 BTC: $" + (data.bitcoin.usd * 0.00497131).toFixed(2) + "</p>";
 		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + (data.ethereum.usd * .04).toFixed(2) + "</p>";
 		document.getElementById("LINK").innerHTML = "<p>2.1693 LINK: $" + (data.chainlink.usd * 2.1693).toFixed(2) + "</p>";

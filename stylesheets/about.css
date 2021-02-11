@@ -31,6 +31,41 @@ body {
 	text-align: center;
 }
 
+.info {
+	text-align: center;
+	font-size: 20pt;
+	color: black; 
+}
+
+.info img {
+	max-width: 50%;
+	height: auto;
+}
+
+.jakepic {
+	width: 50%;
+	float: left;
+}
+
+.jakedesc {
+	margin-left: 50%;
+}
+
+.info a {
+	text-decoration: none;
+	color: #0c008f;
+}
+
+.info a:visited {
+	text-decoration: none;
+	color: #0c008f;
+}
+
+.info a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
 .refs {
     text-align: center;
 }
@@ -48,11 +83,5 @@ body {
 .refs a:hover {
 	color: gray;
 	text-decoration: none;
-}
-
-.info {
-	text-align: center;
-	font-size: 20pt;
-	color: black; 
 }
 

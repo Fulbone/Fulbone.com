@@ -37,10 +37,15 @@ a:hover {
 	font-size: 18pt;
 }
 
-.entry-title {
-	font-size: 14pt;
+.entry-info h1 {
+	font-size: 18pt;
+}
+
+.entry-info h2 {
+	font-size: 16pt;
 }
 
 .entry {
 	font-size: 14pt;
+	text-indent: 4em;
 }
