@@ -1,9 +1,12 @@
-body {
+html {
 	font-family: 'Oxygen';
+	background-color: #282840;
 }
 
 .nav-bar {
 	background-color: #000060;
+	margin-left: calc(50% - 50vw);
+	width: 100vw;
 }
 
 .nav-links {
@@ -31,15 +34,20 @@ a:hover {
 	text-align: center;
 }
 
+.page-wrapper {
+	background-color: #282840;
+	color: white;
+}
+
 .portfolio {
 	text-align: center;
 }
 
-.info {
+.crypto-info {
 	font-size: 16pt;
 }
 
-#money {
+#crypto-money {
 	color: green;
 	font-size: 24pt;
 }
@@ -57,5 +65,9 @@ a:hover {
 #LINK {
 	font-size: 18pt;
 	color: blue;
+}
+
+.stocks {
+	font-size: 16pt;
 }
 

@@ -8,52 +8,96 @@
         <link rel="stylesheet" href="../stylesheets/portfolio.css"> 
     </head>
     <body>
-        <div class="nav-bar">
-			<div class="nav-links">
-				<b>
-				<a href="../index.html">HOME</a>
-				<a href="../about/about.html">ABOUT</a>
-				<a href="portfolio.html">PORTFOLIO</a>
-				<a href="../blog/blog.html">BLOG</a>
-				</b>
-			</div>
-		</div>
-		<div class="title">
-			<h2><b>PORTFOLIO</b></h2>
-		</div>
-		<hr>
-		<div class="portfolio">
-			<div class="info">
-				<p>This page keeps track of how much my cryptocurrency portfolio is worth.<br>If it does not seem to update, clear your browser cache.</p>
-			<div id="money">
-				<h2>Loading...</h2>
-			</div>
-			<div class="coins">
-				<div id="BTC">
-					<p>Loading...</p>
-				</div>
-				<div id="ETH">
-					<p>Loading...</p>
-				</div>
-				<div id="LINK">
-					<p>Loading...</p>
+		<div class="page-wrapper">
+			<div class="nav-bar">
+				<div class="nav-links">
+					<b>
+					<a href="../index.html">HOME</a>
+					<a href="../about/about.html">ABOUT</a>
+					<a href="portfolio.html">PORTFOLIO</a>
+					<a href="../blog/blog.html">BLOG</a>
+					</b>
 				</div>
 			</div>
-			<div class="request">	
-				<p>Please don't spam refresh, I don't want to spam CoinGecko's API.</p>
+			<div class="title">
+				<h2><b>PORTFOLIO</b></h2>
 			</div>
-		</div>
-		<script>
+			<hr>
+			<div class="portfolio">
+				<div class="crypto">
+					<div class="crypto-info">
+						<h1>Crypto</h1>
+						<p>This keeps track of my cryptocurrency portfolio.
+						<br>If it does not seem to update, clear your browser cache and refresh.</p>
+					<div id="crypto-money">
+						<h2>Loading...</h2>
+					</div>
+					<div class="crypto-coins">
+						<div id="BTC">
+							<p>Loading...</p>
+						</div>
+						<div id="ETH">
+							<p>Loading...</p>
+						</div>
+						<div id="LINK">
+							<p>Loading...</p>
+						</div>
+					</div>
+					<div class="crypto-request">	
+						<p>Please don't spam refresh, I don't want to spam CoinGecko's API.</p>
+					</div>
+				</div>
+				<script>
 // JAVASCRIPT IS THE WORST LANGUAGE
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cchainlink&vs_currencies=usd')
 	.then(response => response.json())
 	.then(function(data) {
-		document.getElementById("money").innerHTML = "<h2>Total: $" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
+		document.getElementById("crypto-money").innerHTML = "<h2>Total: $" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
 		document.getElementById("BTC").innerHTML = "<p>0.00497131 BTC: $" + (data.bitcoin.usd * 0.00497131).toFixed(2) + "</p>";
 		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + (data.ethereum.usd * .04).toFixed(2) + "</p>";
 		document.getElementById("LINK").innerHTML = "<p>2.1693 LINK: $" + (data.chainlink.usd * 2.1693).toFixed(2) + "</p>";
 	});
-		</script>
+				</script>
+				<hr>
+				<div class="stocks">
+					<h1>Stocks</h1>
+					<p>I will post my weekly watchlist here every sunday</p>
+					<div class="watchlist">
+						<h2>I am watching:</h2>
+						<p>Week Feb. 15-19</p>
+						<div id="first-watch">
+							<h2>1. GME</h2>
+							<p>Will be interesting to see what WSB still has in them.</p>
+						</div>
+						<div id="second-watch">
+							<h2>2. PLUG</h2>
+							<p>Bought this at $2.75 and sold at $9, it's now at $63.<br>
+							It has been consolidating at $60-70 since January.<br>
+							The 1Y chart looks like a bubble, but who knows.</p>
+						</div>
+						<div id="third-watch">
+							<h2>3. TSLA</h2>
+							<p>The obvious Tesla plug. Last week it went down 6.6%.<br>
+							Tesla is beating every competitor in their market.<br>
+							Literally can not go tits up.</p>
+						</div>
+						<div id="fourth-watch">
+							<h2>4. NVDA</h2>
+							<p>The GPU market is going crazy. Only the GTX 1050 TI is worth while now.<br>
+							Nvidia went up 7.5% last week, seemingly correlating with the crypto market.<br>
+							Every crypto miner is buying their GPUs; looks like the company is winning.</p>
+						</div>
+						<div id="fifth-watch">
+							<h2>5. AMD</h2>
+							<p>I've always been a fan of AMD since they revealed their Ryzen line up.<br>
+							The 3000x and 5000x series are sold out due to the same problem affected NVDA.<br>
+							They beat Intel in the CPU sphere, definitely a good buy.</p>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
     </body>
 </html>
 

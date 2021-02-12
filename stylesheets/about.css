@@ -1,9 +1,16 @@
-body { 
+html {
+	background-color: #282840;
 	font-family: 'Oxygen';
+}
+
+.page-wrapper {
+	color: white;
 }
 
 .nav-bar {
 	background-color: #000060;
+	margin-left: calc(50% - 50vw);
+	width: 100vw;
 }
 
 .nav-links {
@@ -34,7 +41,7 @@ body {
 .info {
 	text-align: center;
 	font-size: 20pt;
-	color: black; 
+	overflow: hidden;
 }
 
 .info img {
@@ -53,12 +60,12 @@ body {
 
 .info a {
 	text-decoration: none;
-	color: #0c008f;
+	color: blue;
 }
 
 .info a:visited {
 	text-decoration: none;
-	color: #0c008f;
+	color: blue;
 }
 
 .info a:hover {
@@ -72,12 +79,12 @@ body {
 }
 
 .refs a {
-	color: #0c008f;
+	color: blue;
 	text-decoration: none;
 }
 
 .refs a:visited {
-	color: #0c008f;
+	color: blue;
 	text-decoration: none;
 }
 

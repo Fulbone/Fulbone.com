@@ -1,9 +1,16 @@
-body {
+html {
 	font-family: 'Oxygen';
+	background-color: #282840;
+}
+
+.page-wrapper {
+	color: white;
 }
 
 .nav-bar {
 	background-color: #000060;
+	margin-left: calc(50% - 50vw);
+	width: 100vw;
 }
 
 .nav-links {
@@ -28,7 +35,6 @@ a:hover {
 
 .title {
 	font-size: 20pt;
-	color: black;
 	text-align: center;
 }
 
@@ -47,5 +53,6 @@ a:hover {
 
 .entry {
 	font-size: 14pt;
-	text-indent: 4em;
+	text-indent: 2em;
 }
+

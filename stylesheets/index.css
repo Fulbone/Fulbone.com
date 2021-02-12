@@ -1,9 +1,16 @@
-body {
+html {
+	background-color: #282840;
 	font-family: 'Oxygen';
+}
+
+.page-wrapper {
+	color: white;
 }
 
 .nav-bar {
 	background-color: #000060;
+	margin-left: calc(50% - 50vw);
+	width: 100vw;
 }
 
 .nav-links {
@@ -30,4 +37,9 @@ a:hover {
 	font-size: 20pt;
 	text-align: center;
 }
+
+.main {
+	text-align: center;
+}
+
 
