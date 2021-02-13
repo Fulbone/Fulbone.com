@@ -38,72 +38,61 @@ html {
 	text-align: center;
 }
 
+.title a {
+	text-decoration: none;
+	color: white;
+}
+
+.title a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.title a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
 .main {
 	width: 100%;
 	overflow: hidden;
 }
 
-.new-entry {
+.entry-list-wrapper {
 	margin-left: 10%;
 	margin-right: 10%;
 	float: left;
 	width: 60%;
 }
 
-.entry-info h1 {
+.entry-list a {
+	text-decoration: none;
+	color: white;
+}
+
+.entry-list a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.entry-list a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.entry-list h1 {
 	font-size: 20pt;
 }
 
-.entry-info h2 {
+.entry-list h2 {
 	font-size: 18pt;
 }
 
-.entry-info h3 {
+.entry-list h3 {
 	font-size: 14pt;
-}
-
-.entry-info a {
-	text-decoration: none;
-	color: #2689cc;
-}
-
-.entry-info a:visited {
-	text-decoration: none;
-	color: #2689cc;
-}
-
-.entry-info a:hover {
-	text-decoration: none;
-	color: gray;
-}
-
-.entry {
-	font-size: 16pt;
-	text-indent: 2em;
-}
-
-.pre-next {
-	text-align: center;
-	font-size: 16pt;
-}
-
-.pre-next a {
-	text-decoration: none;
-	color: #2689cc;
-}
-
-.pre-next a:visited {
-	text-decoration: none;
-	color: #2689cc;
-}
-
-.pre-next a:hover {
-	text-decoration: none;
-	color: gray;
 }
 
 .entry-select {
 	font-size: 16pt;
-	text-align: center;
 }
 
