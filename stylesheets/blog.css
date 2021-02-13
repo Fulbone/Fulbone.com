@@ -61,7 +61,6 @@ html {
 .entry-info h3 {
 	font-size: 14pt;
 }
-
 .entry-info a {
 	text-decoration: none;
 	color: #2689cc;
@@ -104,6 +103,22 @@ html {
 
 .entry-select {
 	font-size: 16pt;
+}
+
+.entry-select-title {
 	text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+	.new-entry {
+		width: 80%;
+		float: none;
+	}
+	.pre-next {
+		font-size: 14pt;
+	}
+	.entry-select-list {
+		text-align: center;
+	}
 }
 
