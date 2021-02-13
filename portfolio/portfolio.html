@@ -20,27 +20,28 @@
 				</div>
 			</div>
 			<div class="title">
-				<h2><b>PORTFOLIO</b></h2>
+				<h1>Portfolio</h1>
 			</div>
 			<hr>
 			<div class="portfolio">
 				<div class="crypto">
 					<div class="crypto-info">
-						<h1>Crypto</h1>
+						<h2>Crypto</h2>
 						<p>This keeps track of my cryptocurrency portfolio.
 						<br>If it does not seem to update, clear your browser cache and refresh.</p>
+					</div>
 					<div id="crypto-money">
 						<h2>Loading...</h2>
 					</div>
 					<div class="crypto-coins">
 						<div id="BTC">
-							<p>Loading...</p>
+							<h3>Loading...</h3>
 						</div>
 						<div id="ETH">
-							<p>Loading...</p>
+							<h3>Loading...</h3>
 						</div>
 						<div id="LINK">
-							<p>Loading...</p>
+							<h3>Loading...</h3>
 						</div>
 					</div>
 					<div class="crypto-request">	
@@ -53,45 +54,45 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cch
 	.then(response => response.json())
 	.then(function(data) {
 		document.getElementById("crypto-money").innerHTML = "<h2>Total: $" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
-		document.getElementById("BTC").innerHTML = "<p>0.00497131 BTC: $" + (data.bitcoin.usd * 0.00497131).toFixed(2) + "</p>";
+		document.getElementById("BTC").innerHTML = "<p>~0.05 BTC: $" + (data.bitcoin.usd * 0.00497131).toFixed(2) + "</p>";
 		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + (data.ethereum.usd * .04).toFixed(2) + "</p>";
-		document.getElementById("LINK").innerHTML = "<p>2.1693 LINK: $" + (data.chainlink.usd * 2.1693).toFixed(2) + "</p>";
+		document.getElementById("LINK").innerHTML = "<p>~2.17 LINK: $" + (data.chainlink.usd * 2.1693).toFixed(2) + "</p>";
 	});
 				</script>
 				<hr>
 				<div class="stocks">
-					<h1>Stocks</h1>
-					<p>I will post my weekly watchlist here every sunday</p>
+					<h2>Stocks</h2>
+					<p>I will post my weekly watchlist here every sunday.</p>
 					<div class="watchlist">
-						<h2>I am watching:</h2>
-						<p>Week Feb. 15-19</p>
+						<p>Week February 15 - 19</p>
+						<h3>I am watching:</h3>
 						<div id="first-watch">
-							<h2>1. GME</h2>
+							<h3>1. GME</h3>
 							<p>Will be interesting to see what WSB still has in them.</p>
 						</div>
 						<div id="second-watch">
-							<h2>2. PLUG</h2>
+							<h3>2. PLUG</h3>
 							<p>Bought this at $2.75 and sold at $9, it's now at $63.<br>
-							It has been consolidating at $60-70 since January.<br>
+							It has been consolidating at around $60-70 since January.<br>
 							The 1Y chart looks like a bubble, but who knows.</p>
 						</div>
 						<div id="third-watch">
-							<h2>3. TSLA</h2>
+							<h3>3. TSLA</h3>
 							<p>The obvious Tesla plug. Last week it went down 6.6%.<br>
 							Tesla is beating every competitor in their market.<br>
 							Literally can not go tits up.</p>
 						</div>
 						<div id="fourth-watch">
-							<h2>4. NVDA</h2>
-							<p>The GPU market is going crazy. Only the GTX 1050 TI is worth while now.<br>
+							<h3>4. NVDA</h3>
+							<p>The GPU market is going crazy. Only the GTX 1050 TI is not being scalped<br>
 							Nvidia went up 7.5% last week, seemingly correlating with the crypto market.<br>
 							Every crypto miner is buying their GPUs; looks like the company is winning.</p>
 						</div>
 						<div id="fifth-watch">
-							<h2>5. AMD</h2>
+							<h3>5. AMD</h3>
 							<p>I've always been a fan of AMD since they revealed their Ryzen line up.<br>
-							The 3000x and 5000x series are sold out due to the same problem affected NVDA.<br>
-							They beat Intel in the CPU sphere, definitely a good buy.</p>
+							The 3000x and 5000x series are sold out due to the same problem affecting Nvidia.<br>
+							They've beat Intel in the CPU sphere, definitely a good buy.</p>
 						</div>
 					</div>
 				</div>

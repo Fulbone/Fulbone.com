@@ -4,34 +4,29 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-
 <url>
-  <loc>https://www.fulbone.com/</loc>
-  <lastmod>2021-02-09T05:31:18+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://www.fulbone.com/</loc>
+	<lastmod>2021-02-09T05:31:18+00:00</lastmod>
+	<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.fulbone.com/index.html</loc>
-  <lastmod>2021-02-09T05:31:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://www.fulbone.com/index.html</loc>
+	<lastmod>2021-02-09T05:31:18+00:00</lastmod>
+	<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.fulbone.com/about.html</loc>
-  <lastmod>2021-02-09T05:31:18+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://www.fulbone.com/about/about.html</loc>
+	<lastmod>2021-02-09T05:31:18+00:00</lastmod>
+	<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.fulbone.com/portfolio/portfolio.html</loc>
-  <lastmod>2021-02-09T06:03:33+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://www.fulbone.com/portfolio/portfolio.html</loc>
+	<lastmod>2021-02-09T06:03:33+00:00</lastmod>
+	<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.fulbone.com/blog/blog.html</loc>
-  <lastmod>2021-02-09T05:31:19+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://www.fulbone.com/blog/blog.html</loc>
+	<lastmod>2021-02-09T05:31:19+00:00</lastmod>
+	<priority>0.80</priority>
 </url>
-
-
 </urlset>

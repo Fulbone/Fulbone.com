@@ -43,8 +43,8 @@ a:hover {
 	text-align: center;
 }
 
-.crypto-info {
-	font-size: 16pt;
+.crypto {
+	font-size: 18pt;
 }
 
 #crypto-money {
@@ -58,16 +58,16 @@ a:hover {
 }
 
 #ETH {
-	font-size: 20pt;
+	font-size: 22pt;
 	color: #00008b;
 }
 
 #LINK {
-	font-size: 18pt;
+	font-size: 22pt;
 	color: blue;
 }
 
 .stocks {
-	font-size: 16pt;
+	font-size: 18pt;
 }
 
