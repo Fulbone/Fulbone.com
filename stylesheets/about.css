@@ -60,12 +60,12 @@ html {
 
 .info a {
 	text-decoration: none;
-	color: blue;
+	color: #2689cc;
 }
 
 .info a:visited {
 	text-decoration: none;
-	color: blue;
+	color: #2689cc;
 }
 
 .info a:hover {
@@ -79,12 +79,12 @@ html {
 }
 
 .refs a {
-	color: blue;
+	color: #2689cc;
 	text-decoration: none;
 }
 
 .refs a:visited {
-	color: blue;
+	color: #2689cc;
 	text-decoration: none;
 }
 

@@ -18,17 +18,17 @@ html {
 	margin-left: 10%;
 }
 
-a {
+.nav-links a {
 	text-decoration: none;
 	color: white;
 }
 
-a:visited {
+.nav-links a:visited {
 	text-decoration: none;
 	color: white;
 }
 
-a:hover {
+.nav-links a:hover {
 	text-decoration: none;
 	color: gray;
 }
@@ -49,6 +49,21 @@ a:hover {
 
 .entry-info h2 {
 	font-size: 18pt;
+}
+
+.entry-info a {
+	text-decoration: none;
+	color: #2689cc;
+}
+
+.entry-info a:visited {
+	text-decoration: none;
+	color: #2689cc;
+}
+
+.entry-info a:hover {
+	text-decoration: none;
+	color: gray;
 }
 
 .entry {
