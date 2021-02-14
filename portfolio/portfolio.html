@@ -26,12 +26,12 @@
 			<hr>
 			<div class="portfolio">
 				<div class="crypto">
-					<div class="crypto-info">
-						<h2>Crypto</h2>
-						<p>This keeps track of my cryptocurrency portfolio.
-						<br>If it does not seem to update, clear your browser cache and refresh.</p>
+					<h1>Crypto</h1>
+					<div class="crypto-portfolio">
+						<p>This keeps track of my cryptocurrency portfolio.<br>
+						If it does not seem to update, clear your browser cache and refresh.</p>
 					</div>
-					<div id="crypto-money">
+					<div id="crypto-total">
 						<h2>Loading...</h2>
 					</div>
 					<div class="crypto-coins">
@@ -48,13 +48,51 @@
 					<div class="crypto-request">	
 						<p>Please don't spam refresh, I don't want to spam CoinGecko's API.</p>
 					</div>
+					<div class="crypto-watch-wrapper">
+						<h2>Crypto Watchlist</h2>
+						<p>I will post my weekly watchlist here every sunday.</p>
+						<div class="crypto-watch">
+							<p>Week February 15 - 19</p>
+							<h3>I am watching:</h3>
+							<div id="first-watch">
+								<h3>1. XMR</h3>
+								<p>Monero is the only real cryptocurrency.<br>
+								This will be the coin people will use in the future if they want to stay anonymous.<br>
+								Went up a lot last week, but still has a lot of room to grow.</p>
+							</div>
+							<div id="second-watch">
+								<h3>2. ADA</h3>
+								<p>Cardano was the first proof-of-stake crypto.<br>
+								It is one of the biggest competitors with Ethereum.<br>
+								However, Ethereum is working fast to upgrade to proof-of-stake.</p>
+							</div>
+							<div id="third-watch">
+								<h3>3. DOT</h3>
+								<p>Polkadot is the other big competitor with ethereum.<br>
+								It is close to overtaking Cardano.<br>
+								Launched earlier in 2020, most likely has more room to grow than ADA.</p>
+							</div>
+							<div id="fourth-watch">
+								<h3>4. GRT</h3>
+								<p>The Graph is a recently launched network on the Ethereum blockchain.<br>
+								As the crypto market grows, more people will want to access the data on it.<br>
+								More than doubled last week, so be wary about buying right now.</p>
+							</div>
+							<div id="fifth-watch">
+								<h3>5. DOGE</h3>
+								<p>Dogecoin is a shitcoin being pumped by Elon Musk.<br>
+								The price of this coin can only go down on the long term.<br>
+								Do not believe the lies, it will never go to a dollar.<p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<script>
 // JAVASCRIPT IS THE WORST LANGUAGE
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cchainlink&vs_currencies=usd')
 	.then(response => response.json())
 	.then(function(data) {
-		document.getElementById("crypto-money").innerHTML = "<h2>Total: $" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
+		document.getElementById("crypto-total").innerHTML = "<h2>Total: $" + ((data.bitcoin.usd*0.00497131)+(data.ethereum.usd*0.04)+(data.chainlink.usd*2.1693)).toFixed(2) + "</h2>";
 		document.getElementById("BTC").innerHTML = "<p>~0.05 BTC: $" + (data.bitcoin.usd * 0.00497131).toFixed(2) + "</p>";
 		document.getElementById("ETH").innerHTML = "<p>0.04 ETH: $" + (data.ethereum.usd * .04).toFixed(2) + "</p>";
 		document.getElementById("LINK").innerHTML = "<p>~2.17 LINK: $" + (data.chainlink.usd * 2.1693).toFixed(2) + "</p>";
@@ -62,9 +100,15 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cch
 				</script>
 				<hr>
 				<div class="stocks">
-					<h2>Stocks</h2>
-					<p>I will post my weekly watchlist here every sunday.</p>
-					<div class="watchlist">
+						<h1>Stocks</h1>
+					<div class="stock-portfolio">
+						<p>This keeps track of my stock portfolio.<br>
+						If it does not seem to update, clear your browser cache and refresh.</p>
+						<h3>No current investments in the stock market.</h3>
+					</div>
+					<div class="stocks-watch">
+						<h2>Stock Watchlist</h2>
+						<p>I will post my weekly watchlist here every sunday.</p>
 						<p>Week February 15 - 19</p>
 						<h3>I am watching:</h3>
 						<div id="first-watch">
@@ -85,9 +129,9 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cch
 						</div>
 						<div id="fourth-watch">
 							<h3>4. NVDA</h3>
-							<p>The GPU market is going crazy. Only the GTX 1050 TI is not being scalped<br>
+							<p>The GPU market is going crazy. Only the GTX 1050 TI is not being scalped.<br>
 							Nvidia went up 7.5% last week, seemingly correlating with the crypto market.<br>
-							Every crypto miner is buying their GPUs; looks like the company is winning.</p>
+							Every crypto miner is buying their GPUs; the company is winning.</p>
 						</div>
 						<div id="fifth-watch">
 							<h3>5. AMD</h3>
@@ -96,6 +140,8 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cch
 							They've beat Intel in the CPU sphere, definitely a good buy.</p>
 						</div>
 					</div>
+					<hr>
+					<h3>Remeber that there are always winners, you just have to find them.</h3>
 				</div>
 				<br>
 			</div>
