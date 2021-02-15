@@ -45,12 +45,12 @@ a:hover {
 }
 
 .info img {
-	max-width: 55%;
+	max-width: 60%;
 	height: auto;
 }
 
 .jakepic {
-	width: 55%;
+	width: 60%;
 	float: left;
 }
 
@@ -73,9 +73,33 @@ a:hover {
 	color: gray;
 }
 
+.metamusic {
+	text-align: center;
+	font-size: 16pt;
+}
+
+.metamusic p {
+	font-size: 20pt;
+}
+
+.metamusic-dl a {
+	color: #2689cc;
+	text-decoration: none;
+}
+
+.metamusic-dl a:visited {
+	color: #2689cc;
+	text-decoration: none;
+}
+
+.metamusic-dl a:hover {
+	color: gray;
+	text-decoration: none;
+}
+
 .refs {
     text-align: center;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 .refs a {
@@ -105,8 +129,5 @@ a:hover {
 	.jakedesc {
 		margin-left: 0%;
 	{
-	.refs {
-		text-align: center;
-	}
 }
 
