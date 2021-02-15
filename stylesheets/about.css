@@ -82,19 +82,34 @@ a:hover {
 	font-size: 20pt;
 }
 
-.metamusic-dl a {
+.metamusic a {
 	color: #2689cc;
 	text-decoration: none;
 }
 
-.metamusic-dl a:visited {
+.metamusic a:visited {
 	color: #2689cc;
 	text-decoration: none;
 }
 
-.metamusic-dl a:hover {
+.metamusic a:hover {
 	color: gray;
 	text-decoration: none;
+}
+
+.mm-vid-wrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.metamusic-vid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .refs {
