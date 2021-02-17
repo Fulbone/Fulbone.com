@@ -42,4 +42,13 @@ a:hover {
 	text-align: center;
 }
 
+.qotd {
+	font-size: 18pt;
+}
+
+.quote {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 20pt;
+}
 

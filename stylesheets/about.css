@@ -97,6 +97,12 @@ a:hover {
 	text-decoration: none;
 }
 
+.mm-wrapper-wrapper {
+	margin-left: 15%;
+	width: 70%;
+	height: auto;
+}
+
 .mm-vid-wrapper {
 	position: relative;
 	width: 100%;
